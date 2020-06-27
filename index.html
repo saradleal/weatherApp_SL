@@ -11,6 +11,7 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -20,13 +21,13 @@
           <form>
             <input type="text" placeholder="Enter a City" />
             <button type="submit">Search</button> <button>Current</button>
-            <button>Cº</button>
-            <button>F</button>
+            <button>ºC</button>
+            <button>ºF</button>
           </form>
         </div>
         <div class="secondSection">
           <p class="date">
-            19/05/2020 at 10am
+            19/05/2020 Monday 10am
           </p>
           <div class="row row-cols-2" id="mainInfo">
             <div class="col">img</div>
@@ -39,9 +40,9 @@
           </div>
           <br />
           <div class="row row-cols-3" id="PHW">
-            <div class="col">Precipitation <span>1%</span></div>
-            <div class="col">Humidity <span>56%</span></div>
-            <div class="col">Wind <span>10 km/h</span></div>
+            <div class="col"><span id="description">Clear Sky</span></div>
+            <div class="col">Humidity <span id="hum">56%</span></div>
+            <div class="col">Wind <span id="wind">10 km/h</span></div>
           </div>
         </div>
         <div class="thirdSection">

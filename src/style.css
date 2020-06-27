@@ -39,6 +39,7 @@ input {
 
 #PHW {
   text-align: center;
+  text-transform: capitalize;
 }
 
 .thirdSection {
