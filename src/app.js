@@ -34,6 +34,13 @@ function displayTemperature(response) {
   descriptElement.innerHTML = `${response.data.weather[0].description}`;
   let currentDate = document.querySelector("#date");
   currentDate.innerHTML = formatDate(response.data.dt * 1000);
+
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 let city = "Lisbon";
