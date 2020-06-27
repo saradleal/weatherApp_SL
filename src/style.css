@@ -36,6 +36,11 @@ input {
 .date {
   font-style: italic;
 }
+
+.thirdSection {
+  line-height: 50px;
+  text-align: center;
+}
 .codedBy {
   text-align: center;
   margin-top: 0px;
