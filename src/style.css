@@ -1,3 +1,42 @@
-h1 {
-  color: greenyellow;
+.frame {
+  background-color: #68969b;
+  margin: 40px 280px 20px 280px;
+  padding: 20px;
+  border: 1px solid #68969b;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #e3eaea;
+}
+
+.firstSection,
+.secondSection,
+.thirdSection {
+  padding: 20px 0;
+}
+
+button {
+  background-color: #68969b;
+  border: 1px solid #e3eaea;
+  color: #e3eaea;
+  border-radius: 10px;
+  transition: all 200ms ease;
+}
+
+button:hover {
+  background-color: #3b696d;
+}
+input {
+  max-width: 270px;
+}
+#mainInfo {
+  font-size: 40px;
+  padding: 10px 20px;
+}
+.date {
+  font-style: italic;
+}
+.codedBy {
+  text-align: center;
+  margin-top: 0px;
 }
