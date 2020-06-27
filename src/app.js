@@ -43,8 +43,19 @@ function displayTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-let city = "Lisbon";
-let apiKey = `6113e3b3510550cbd3323000a23aede8`;
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+function search(city) {
+  let apiKey = `6113e3b3510550cbd3323000a23aede8`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+  let cityName = document.querySelector("#city");
+  cityName.innerHTML = `${city}`;
+}
 
-axios.get(apiUrl).then(displayTemperature);
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#cityInput");
+  search(cityInputElement.value);
+}
+
+let form = document.querySelector("#searchForm");
+form.addEventListener("submit", handleSubmit);
