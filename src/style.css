@@ -1,6 +1,6 @@
 .frame {
   background-color: #68969b;
-  margin: 40px 280px 20px 280px;
+  margin: 40px 270px 20px 270px;
   padding: 20px;
   border: 1px solid #68969b;
   border-radius: 10px;
@@ -14,6 +14,9 @@
 .thirdSection {
   padding: 20px 0;
 }
+input {
+  width: 435px;
+}
 
 button {
   background-color: #68969b;
@@ -26,9 +29,11 @@ button {
 button:hover {
   background-color: #3b696d;
 }
-input {
-  max-width: 270px;
+.units {
+  text-align: right;
+  margin-bottom: 0px;
 }
+
 img {
   width: 85px;
 }
