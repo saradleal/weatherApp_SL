@@ -52,6 +52,10 @@ img {
   line-height: 50px;
   text-align: center;
 }
+
+.forecast {
+  width: 40px;
+}
 .codedBy {
   text-align: center;
   margin-top: 0px;
